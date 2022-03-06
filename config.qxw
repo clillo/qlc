@@ -360,8 +360,8 @@
    <FixtureGroup>0</FixtureGroup>
    <Property Name="tailfade" Value="No"/>
    <Property Name="taillength" Value="50"/>
-   <Property Name="orientation" Value="Horizontal"/>
    <Property Name="direction" Value="Right"/>
+   <Property Name="orientation" Value="Horizontal"/>
   </Function>
   <Function ID="9" Type="Scene" Name="Spider1 - Up Down" Path="Spider">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -600,22 +600,22 @@
    <Step Number="6" FadeIn="100" Hold="100" FadeOut="100" Values="34">8:2,255,30,255</Step>
    <Step Number="7" FadeIn="100" Hold="100" FadeOut="100" Values="34">8:2,255,35,255</Step>
   </Function>
-  <Function ID="25" Type="Sequence" Name="Derby chasing - rotan" BoundScene="26">
+  <Function ID="25" Type="Sequence" Name="Derby chasing - rotan" Path="Derby" BoundScene="26">
    <Speed FadeIn="500" FadeOut="500" Duration="3656"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
    <Step Number="0" FadeIn="500" Hold="0" FadeOut="0" Values="12">6:0,255,6,150:7:0,255,2,255,6,210</Step>
    <Step Number="1" FadeIn="0" Hold="0" FadeOut="0" Values="12">6:0,255,2,255,6,150:7:0,255,6,210</Step>
-   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0" Values="12">6:0,255,6,150:7:0,255,3,255,6,210</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0" Values="12">6:0,255,6,150:7:0,255,2,255,3,255,6,150</Step>
    <Step Number="3" FadeIn="500" Hold="1000" FadeOut="500" Values="12">6:0,255,3,255,6,150:7:0,255,6,210</Step>
    <Step Number="4" FadeIn="500" Hold="494" FadeOut="500" Values="12">6:0,255,6,150:7:0,255,1,255,6,210</Step>
    <Step Number="5" FadeIn="500" Hold="494" FadeOut="500" Values="12">6:0,255,1,255,6,150:7:0,255,6,210</Step>
   </Function>
   <Function ID="26" Type="Scene" Name="Derby ambos rojos" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="7">0,0,1,0,2,0,3,0,4,0,6,0</FixtureVal>
-   <FixtureVal ID="6">0,0,1,0,2,0,3,0,4,0,6,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0</FixtureVal>
   </Function>
   <Function ID="27" Type="Scene" Name="New Scene" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -739,7 +739,7 @@
    <FixtureVal ID="4">2,255,3,0,4,255,5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
    <FixtureVal ID="5">2,255,3,0,4,255,5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
   </Function>
-  <Function ID="33" Type="Sequence" Name="Derby ambos chasing - rotan lento" BoundScene="34">
+  <Function ID="33" Type="Sequence" Name="Derby ambos chasing - rotan lento" Path="Derby" BoundScene="34">
    <Speed FadeIn="500" FadeOut="500" Duration="3656"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
@@ -751,8 +751,8 @@
   </Function>
   <Function ID="34" Type="Scene" Name="Derby ambos rojos" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="7">0,0,1,0,2,0,3,0,4,0,6,0</FixtureVal>
-   <FixtureVal ID="6">0,0,1,0,2,0,3,0,4,0,6,0</FixtureVal>
+   <FixtureVal ID="7">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0</FixtureVal>
   </Function>
   <Function ID="35" Type="Scene" Name="Spider- Dimmer Verde1" Path="Spider">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1274,11 +1274,6 @@
    <FixtureVal ID="2">0,0,1,0,2,0,3,0,4,0,5,0,6,0</FixtureVal>
    <FixtureVal ID="3">0,0,1,0,2,0,3,0,4,0,5,0,6,0</FixtureVal>
   </Function>
-  <Function ID="97" Type="Scene" Name="Spider - L L L L" Hidden="True" Path="Spider">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">0,0,1,0</FixtureVal>
-   <FixtureVal ID="5">0,0,1,0</FixtureVal>
-  </Function>
   <Function ID="98" Type="Scene" Name="RBGW" Hidden="True">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0,5,0,6,0</FixtureVal>
@@ -1372,16 +1367,6 @@
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="4">0,10,1,0</FixtureVal>
    <FixtureVal ID="5">0,175,1,175</FixtureVal>
-  </Function>
-  <Function ID="113" Type="Scene" Name="Spider- Dimmer Azul" Hidden="True" Path="Spider">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
-   <FixtureVal ID="5">2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
-  </Function>
-  <Function ID="114" Type="Scene" Name="Spider- Dimmer Blanco" Hidden="True" Path="Spider">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <FixtureVal ID="4">2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
-   <FixtureVal ID="5">2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
   </Function>
   <Function ID="115" Type="Scene" Name="Spider- Dimmer Rojo" Path="Spider">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -1493,6 +1478,16 @@
    <FixtureVal ID="4">2,255,3,0,4,0,5,255,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
    <FixtureVal ID="5">2,255,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
   </Function>
+  <Function ID="137" Type="Scene" Name="Derby Strobo Rápido" Path="Derby">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">0,255,1,0,2,0,3,0,4,255,5,232,6,0,7,0</FixtureVal>
+   <FixtureVal ID="6">0,255,1,0,2,0,3,0,4,255,5,232,6,0,7,0</FixtureVal>
+  </Function>
+  <Function ID="138" Type="Scene" Name="Derby Strobo Lento" Path="Derby">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">0,255,1,0,2,0,3,0,4,255,5,43,6,0,7,0</FixtureVal>
+   <FixtureVal ID="6">0,255,1,0,2,0,3,0,4,255,5,43,6,0,7,0</FixtureVal>
+  </Function>
   <Function ID="139" Type="Collection" Name="New Collection 139">
    <Step Number="0">105</Step>
    <Step Number="1">78</Step>
@@ -1501,45 +1496,12 @@
   </Function>
   <Function ID="140" Type="Show" Name="New Show 140">
    <TimeDivision Type="Time" BPM="120"/>
-   <Track ID="0" Name="Spider - L L L L" SceneID="97" isMute="0">
-    <ShowFunction ID="141" StartTime="0" Duration="5000" Color="#556b80"/>
-   </Track>
-   <Track ID="1" Name="Spider- Dimmer Azul" SceneID="113" isMute="0">
-    <ShowFunction ID="142" StartTime="0" Duration="2500" Color="#556b80"/>
-   </Track>
-   <Track ID="2" Name="Spider- Dimmer Blanco" SceneID="114" isMute="0">
-    <ShowFunction ID="143" StartTime="2560" Duration="10000" Color="#556b80"/>
-   </Track>
+   <Track ID="0" Name="Spider - L L L L" isMute="0"/>
+   <Track ID="1" Name="Spider- Dimmer Azul" isMute="0"/>
+   <Track ID="2" Name="Spider- Dimmer Blanco" isMute="0"/>
    <Track ID="3" Name="New Scene" SceneID="52" isMute="0">
     <ShowFunction ID="145" StartTime="0" Duration="11536" Color="#556b80"/>
    </Track>
-  </Function>
-  <Function ID="141" Type="Sequence" Name="New Sequence 141" BoundScene="97">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <Direction>Forward</Direction>
-   <RunOrder>SingleShot</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
-   <Step Number="0" FadeIn="0" Hold="5000" FadeOut="0" Values="4">4:0,10,1,175:5:0,10,1,175</Step>
-  </Function>
-  <Function ID="142" Type="Sequence" Name="New Sequence 142" BoundScene="113">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <Direction>Forward</Direction>
-   <RunOrder>SingleShot</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
-   <Step Number="0" FadeIn="0" Hold="2500" FadeOut="0" Values="20">4:2,255,6,255,9,255:5:2,255,6,255,9,255</Step>
-  </Function>
-  <Function ID="143" Type="Sequence" Name="New Sequence 143" BoundScene="114">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <Direction>Forward</Direction>
-   <RunOrder>SingleShot</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="PerStep"/>
-   <Step Number="0" FadeIn="0" Hold="10000" FadeOut="0" Values="20">4:2,255,7,255,8,255:5:2,255,7,255,8,255</Step>
-  </Function>
-  <Function ID="144" Type="Sequence" Name="New Sequence 144" BoundScene="97">
-   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <Direction>Forward</Direction>
-   <RunOrder>SingleShot</RunOrder>
-   <SpeedModes FadeIn="Default" FadeOut="Default" Duration="Common"/>
   </Function>
   <Function ID="145" Type="Sequence" Name="Spider - Secuencial 5 (Copy)" Path="Spiders" BoundScene="52">
    <Speed FadeIn="100" FadeOut="200" Duration="721"/>
@@ -1562,6 +1524,47 @@
    <Step Number="13" FadeIn="0" Hold="0" FadeOut="0" Values="20">4:2,255,4,255:5:2,255</Step>
    <Step Number="14" FadeIn="100" Hold="900" FadeOut="200" Values="20">4:2,255:5:2,255,11,255</Step>
    <Step Number="15" FadeIn="100" Hold="900" FadeOut="200" Values="20">4:2,255:5:2,255,7,255</Step>
+  </Function>
+  <Function ID="146" Type="Sequence" Name="Stobo Blue random" Path="Multiple" BoundScene="147">
+   <Speed FadeIn="0" FadeOut="0" Duration="1000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0" Values="104">4:0,72,1,90,2,255,3,146,6,255,9,255:5:0,72,1,90,2,255,3,146,6,255,9,255</Step>
+   <Step Number="1" FadeIn="0" Hold="3000" FadeOut="0" Values="104">0:0,255,3,255,5,94</Step>
+   <Step Number="2" FadeIn="0" Hold="1000" FadeOut="0" Values="104">8:0,108,1,87,2,255,3,122,6,255,18,255,26,255,30,255</Step>
+   <Step Number="3" FadeIn="0" Hold="3000" FadeOut="0" Values="104">6:0,255,3,255,5,101</Step>
+   <Step Number="4" FadeIn="0" Hold="0" FadeOut="0" Values="104">2:0,255,3,255,5,177</Step>
+  </Function>
+  <Function ID="147" Type="Scene" Name="Spider - L L L L" Hidden="True" Path="Spider">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="7">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="6">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0</FixtureVal>
+   <FixtureVal ID="0">0,0,1,0,2,0,3,0,4,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="1">0,0,1,0,2,0,3,0,4,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="2">0,0,1,0,2,0,3,0,4,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="3">0,0,1,0,2,0,3,0,4,0,5,0,6,0</FixtureVal>
+   <FixtureVal ID="8">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0,24,0,25,0,26,0,27,0,28,0,29,0,30,0,31,0,32,0,33,0,34,0,35,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+  </Function>
+  <Function ID="148" Type="Sequence" Name="Mover Spiders" Path="Multiple" BoundScene="149">
+   <Speed FadeIn="50" FadeOut="0" Duration="850"/>
+   <Direction>Forward</Direction>
+   <RunOrder>Loop</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Default" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="1000" FadeOut="0" Values="60">4:0,190,2,255:5:1,194,2,255:8:1,210,2,255,4,255,8,255,12,255,16,255</Step>
+   <Step Number="1" FadeIn="0" Hold="1000" FadeOut="0" Values="60">4:2,255,4,255,5,255,6,255:5:1,194,2,255:8:0,214,1,210,2,255</Step>
+   <Step Number="2" FadeIn="0" Hold="1000" FadeOut="0" Values="60">4:0,190,2,255:5:2,255,9,255,10,255,11,255:8:0,214,1,210,2,255</Step>
+   <Step Number="3" FadeIn="50" Hold="800" FadeOut="0" Values="60">4:0,190,2,255:5:1,194,2,255:8:0,214,2,255,21,255,25,255,29,255,33,255</Step>
+   <Step Number="4" FadeIn="50" Hold="800" FadeOut="0" Values="60">4:0,190,2,255:5:0,194,1,194,2,255,4,255,5,255,6,255:8:0,214,1,210,2,255</Step>
+   <Step Number="5" FadeIn="50" Hold="800" FadeOut="0" Values="60">4:0,190,1,191,2,255,9,255,10,255,11,255:5:1,194,2,255:8:0,214,1,210,2,255</Step>
+  </Function>
+  <Function ID="149" Type="Scene" Name="Spider - L L L L" Hidden="True" Path="Spider">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <FixtureVal ID="8">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0,22,0,23,0,24,0,25,0,26,0,27,0,28,0,29,0,30,0,31,0,32,0,33,0,34,0,35,0</FixtureVal>
+   <FixtureVal ID="4">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
+   <FixtureVal ID="5">0,0,1,0,2,0,3,0,4,0,5,0,6,0,7,0,8,0,9,0,10,0,11,0</FixtureVal>
   </Function>
   <Monitor DisplayMode="1" ShowLabels="0">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
@@ -1603,7 +1606,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="1275" Y="615" Width="1085" Height="230"/>
+    <WindowState Visible="True" X="1275" Y="605" Width="1085" Height="230"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -1611,12 +1614,12 @@
     <Mixing>False</Mixing>
     <Collapsed>False</Collapsed>
     <Disabled>False</Disabled>
-    <Button Caption="Ambos Rojo Rotan Lento" ID="7" Icon="">
+    <Button Caption="Rojo Rotan" ID="7" Icon="">
      <WindowState Visible="True" X="10" Y="50" Width="155" Height="75"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4294901760</BackgroundColor>
+      <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
@@ -1625,12 +1628,12 @@
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="0" Channel="165" LowerValue="2" UpperValue="4"/>
     </Button>
-    <Button Caption="Ambos Verde Rotan Lento" ID="8" Icon="">
+    <Button Caption="Verde Rotan" ID="8" Icon="">
      <WindowState Visible="True" X="10" Y="145" Width="155" Height="75"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4283804287</BackgroundColor>
+      <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
@@ -1639,12 +1642,12 @@
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="0" Channel="157" LowerValue="2" UpperValue="4"/>
     </Button>
-    <Button Caption="Ambos Azul Rotan Lento" ID="9" Icon="">
+    <Button Caption="Azul Rotan" ID="9" Icon="">
      <WindowState Visible="True" X="185" Y="50" Width="165" Height="80"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4283782655</BackgroundColor>
+      <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
@@ -1653,12 +1656,12 @@
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="0" Channel="166" LowerValue="2" UpperValue="4"/>
     </Button>
-    <Button Caption="Ambos Blanco Rotan Lento" ID="10" Icon="">
+    <Button Caption="Blanco Rotan" ID="10" Icon="">
      <WindowState Visible="True" X="185" Y="145" Width="170" Height="75"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4294967295</BackgroundColor>
+      <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
@@ -1667,12 +1670,12 @@
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="0" Channel="158" LowerValue="2" UpperValue="4"/>
     </Button>
-    <Button Caption="Ambos Chasing Rotan Lento" ID="11" Icon="">
+    <Button Caption="Chasing Rotan" ID="11" Icon="">
      <WindowState Visible="True" X="365" Y="50" Width="160" Height="80"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4294967167</BackgroundColor>
+      <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
@@ -1682,7 +1685,7 @@
      <Input Universe="0" Channel="167" LowerValue="2" UpperValue="4"/>
     </Button>
     <SpeedDial Caption="" ID="112">
-     <WindowState Visible="True" X="540" Y="55" Width="510" Height="120"/>
+     <WindowState Visible="True" X="825" Y="55" Width="240" Height="160"/>
      <Appearance>
       <FrameStyle>Sunken</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
@@ -1698,12 +1701,12 @@
      <Function FadeIn="0" FadeOut="0" Duration="6">25</Function>
      <Function FadeIn="0" FadeOut="0" Duration="6">33</Function>
     </SpeedDial>
-    <Button Caption="Ambos Chasing Rotan Lento" ID="12" Icon="">
+    <Button Caption="Chasing Rotan" ID="12" Icon="">
      <WindowState Visible="True" X="365" Y="145" Width="160" Height="75"/>
      <Appearance>
       <FrameStyle>None</FrameStyle>
       <ForegroundColor>Default</ForegroundColor>
-      <BackgroundColor>4294967167</BackgroundColor>
+      <BackgroundColor>Default</BackgroundColor>
       <BackgroundImage>None</BackgroundImage>
       <Font>Default</Font>
      </Appearance>
@@ -1711,6 +1714,32 @@
      <Action>Toggle</Action>
      <Intensity Adjust="False">100</Intensity>
      <Input Universe="0" Channel="159" LowerValue="2" UpperValue="4"/>
+    </Button>
+    <Button Caption="Strobo Rápido" ID="83" Icon="">
+     <WindowState Visible="True" X="540" Y="50" Width="160" Height="80"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="137"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="Strobo Lento" ID="84" Icon="">
+     <WindowState Visible="True" X="540" Y="145" Width="160" Height="75"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="138"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
     </Button>
    </SoloFrame>
    <Frame Caption="Spider 2-3" ID="14">
@@ -1815,7 +1844,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="97"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
       <Input Universe="0" Channel="65684" LowerValue="6" UpperValue="8"/>
@@ -2266,7 +2295,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="113"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
@@ -2279,7 +2308,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="114"/>
+      <Function ID="4294967295"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
@@ -3373,7 +3402,7 @@
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
-     <Button Caption="Button 150" ID="150" Icon="">
+     <Button Caption="Stobo Blue random" ID="150" Icon="">
       <WindowState Visible="True" X="140" Y="15" Width="115" Height="115"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
@@ -3382,11 +3411,11 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="4294967295"/>
+      <Function ID="146"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
-     <Button Caption="Button 151" ID="151" Icon="">
+     <Button Caption="Mover Spiders" ID="151" Icon="">
       <WindowState Visible="True" X="265" Y="15" Width="115" Height="115"/>
       <Appearance>
        <FrameStyle>None</FrameStyle>
@@ -3395,7 +3424,7 @@
        <BackgroundImage>None</BackgroundImage>
        <Font>Default</Font>
       </Appearance>
-      <Function ID="4294967295"/>
+      <Function ID="148"/>
       <Action>Toggle</Action>
       <Intensity Adjust="False">100</Intensity>
      </Button>
